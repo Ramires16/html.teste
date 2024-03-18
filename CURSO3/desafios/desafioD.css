@@ -1,0 +1,58 @@
+/* 1) Espaçamento e tamanho dos botões
+Continuando no arquivo style.css, foque nas tags <a> dentro de .apresentacao__links.
+Defina um tamanho consistente para os botões utilizando propriedades como padding e font-size.
+Para o espaçamento, use a propriedade margin para adicionar espaço entre os botões. */
+.apresentacao__links a {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+
+
+/* 2) Melhorando a visibilidade dos botões
+No arquivo style.css, trabalhe nas tags <a> dentro de .apresentacao__links.
+Aumente a fonte usando font-size para melhorar a legibilidade.
+Altere a cor de fundo e a cor da fonte para contrastar melhor. */
+.apresentacao__links a {
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+/* 3) Criando uma classe comum para botões
+No arquivo index.html, adicione a classe apresentacao__links__link às tags <a> dentro da <div class="apresentacao__links">.
+No arquivo style.css, crie a classe .apresentacao__links__link e adicione as propriedades de estilo como background-color, width, text-align, border-radius e font-size. */
+.apresentacao__links__link {
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+}
+
+
+
+/* 4) Ajustando o espaçamento interno dos botões
+No arquivo style.css, dentro da classe .apresentacao__links__link, ajuste o padding para 21.5px na parte superior e inferior, mantendo 0 nas laterais. */
+.apresentacao__links__link {
+    padding: 21.5px 0;
+}
+
+
+
+
+/* 5) Importando e aplicando a fonte correta
+Adicione o @import url da fonte Montserrat com peso 600 no início do arquivo style.css.
+Aplique a fonte Montserrat e o peso de fonte apropriado na classe .apresentacao__links__link, além de ajustar a cor do texto e remover a decoração do texto.
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap'); */
+
+.apresentacao__links__link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+}
