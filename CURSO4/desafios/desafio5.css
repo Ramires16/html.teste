@@ -1,0 +1,122 @@
+/* 1) Adicionando conteúdo à página "Sobre mim"
+Abra o arquivo about.html e localize o elemento <main>.
+Dentro de <main>, crie uma <section> e, dentro desta, insira um <h1> com o texto "Sobre mim".
+Utilize o atalho p*2 e "Enter" para criar dois parágrafos vazios abaixo do <h1>.
+Retorne ao Figma, copie o texto de "Lorem ipsum" e cole nos parágrafos.
+Adicione uma tag <img> fora da <section>, mas dentro de <main>.
+Copie o código da imagem do arquivo index.html e cole na tag <img> do about.html.
+Código: */
+
+about.html:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
+    //... cabeçalho e rodapé omitidos
+    <main>
+        <section>
+            <h1>Sobre mim</h1>
+            <p>Lorem ipsum dolor sit amet...</p>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </section>
+        <img src=".assets/imagem.png" alt="Foto da Joana Santos programando">
+    </main>
+    //... rodapé
+</body>
+</html>
+
+
+
+/* 2) Aplicando estilos à página "Sobre mim"
+Dentro do <main> do arquivo about.html, adicione a classe "apresentacao".
+Na <section> dentro de <main>, adicione a classe "apresentacao__conteudo".
+Ao <h1> dentro da <section>, adicione a classe "apresentacao__conteudo__titulo".
+Aos dois parágrafos, adicione a classe "apresentacao__conteudo__texto" usando a técnica de seleção múltipla (segurando "Alt" e clicando).
+Salve as alterações e abra o arquivo no navegador para verificar se os estilos foram aplicados corretamente.
+Código: */
+
+about.html:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
+    //... cabeçalho e rodapé omitidos
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
+            <p class="apresentacao__conteudo__texto">Lorem ipsum dolor sit amet...</p>
+            <p class="apresentacao__conteudo__texto">Lorem ipsum dolor sit amet...</p>
+        </section>
+        <img src=".assets/imagem.png" alt="Foto da Joana Santos programando">
+    </main>
+    //... rodapé
+</body>
+</html>
+
+
+
+
+/* 3) Definindo variáveis de cores no CSS
+Abra o arquivo style.css no VS Code.
+No início do arquivo, adicione a pseudoclasse :root.
+Dentro do :root, defina três variáveis para as cores principais do projeto. Use a sintaxe --nome-da-variavel: valor; para cada cor.
+Código: */
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+//... restante do código
+
+
+
+
+/* 4) Aplicando as variáveis de cores no projeto
+Procure no arquivo style.css onde as cores originais, como #000000, #F6F6F6 e #22D4FD, foram usadas.
+Substitua todas as ocorrências dessas cores pelas variáveis correspondentes, usando a sintaxe var(--nome-da-variavel).
+Por exemplo, substitua #000000 por var(--cor-primaria) em todas as suas ocorrências no arquivo.
+Código: */
+
+// Exemplo de substituição no arquivo
+.cabecalho {
+    background-color: var(--cor-primaria);
+    //... outros estilos
+}
+
+.rodape {
+    color: var(--cor-secundaria);
+    //... outros estilos
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-terciaria);
+    //... outros estilos
+}
+//... restante do código
+
+
+
+
+/* 5) Aplicando variáveis CSS para cores e fontes
+Abra o arquivo style.css no seu editor de código.
+Substitua os valores hexadecimais de cores pelas variáveis CSS correspondentes. Por exemplo, onde encontrar #22D4FD, substitua por var(--cor-terciaria).
+Faça o mesmo para as cores primária, secundária e hover, bem como para as fontes primária e secundária, substituindo os valores hexadecimais pelas variáveis CSS.
+Salve as alterações e recarregue seu projeto para verificar se as cores e fontes foram aplicadas corretamente. */
+
+
+
+
+/* 6) Testando a flexibilidade das variáveis CSS com uma nova paleta de cores
+Acesse o site Color Hunt e selecione uma nova paleta de cores para o seu projeto.
+Copie os valores hexadecimais das novas cores escolhidas.
+Abra o arquivo style.css e substitua os valores nas variáveis CSS dentro do :root pelas novas cores. Por exemplo, altere --cor-primaria para o novo valor de cor escolhido.
+Salve o arquivo e visualize o projeto no navegador para observar as mudanças.
+Esta atividade demonstrará a facilidade de manutenção e alteração do design do seu projeto através do uso de variáveis CSS. */

@@ -1,0 +1,160 @@
+/* 1) Estilizando o cabeçalho com CSS
+Para estilizar a classe .cabecalho__menu__link, insira as seguintes propriedades em style.css: */
+  .cabecalho__menu__link {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: #22D4FD;
+  }
+
+
+
+/* Ajuste o padding da classe .cabecalho para espaçar corretamente o conteúdo: */
+  .cabecalho {
+      padding: 2% 0% 0% 15%;
+  }
+
+
+
+/* Implemente o FlexBox na classe .cabecalho__menu e defina um gap: */
+  .cabecalho__menu {
+      display: flex;
+      gap: 80px;
+  }
+/* Após aplicar essas mudanças, salve o arquivo e confira o resultado no navegador para garantir que as modificações estão de acordo com o design proposto. */
+
+
+
+/* 2) Ajustando o espaçamento do conteúdo
+Modifique o padding da classe .apresentacao para alinhar melhor o conteúdo com o cabeçalho: */
+  .apresentacao {
+      padding: 5% 15%;
+  }
+/* Após as alterações, é importante conferir no navegador se o layout está alinhado e corresponde ao design planejado. */
+
+
+
+
+/* 3) Criando e navegando para a página "Sobre mim"
+Crie um novo arquivo HTML chamado about.html.
+Crie toda a estrutura básica do HTML.
+Altere a linguagem do documento para português brasileiro (lang="pt-br").
+No <head>, defina o título como "Sobre mim" na tag <title>.
+Adicione um <h1> no <body> com o texto "Sobre mim".
+No arquivo index.html, encontre a seção do menu de navegação.
+Adicione um link para about.html usando a tag <a> com o atributo href.
+Verifique se ao clicar no link "Sobre mim" no index.html, a navegação é feita corretamente para a página about.html.
+Código: */
+
+about.html:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+</head>
+<body>
+    <h1>Sobre mim</h1>
+</body>
+</html>
+COPIAR CÓDIGO
+index.html (parte do código):
+
+//... código omitido
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        </nav>
+    </header>
+//... código omitido
+</body>
+</html>
+
+
+
+
+
+
+/* 4) Ajustando a estilização após reorganização de arquivos
+No arquivo index.html, atualize o link para o styles.css para refletir o novo caminho ("./styles/styles.css").
+Abra o arquivo styles.css e encontre o seletor .cabecalho__menu__link.
+Adicione a propriedade text-decoration: none; para remover o sublinhado dos links.
+Salve as alterações e recarregue a página no navegador para verificar se a estilização foi aplicada corretamente e se os links do cabeçalho estão sem sublinhado.
+Código: */
+
+index.html (parte do código):
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    //... código omitido
+    <link rel="stylesheet" href="./styles/styles.css">
+    //... código omitido
+</head>
+//... resto do código
+
+
+styles.css:
+
+//... código omitido
+
+.cabecalho__menu__link {
+    //... outras propriedades
+    text-decoration: none;
+}
+
+//... código omitido
+
+
+
+
+/* 5) Estruturando a página "Sobre mim" com cabeçalho e rodapé
+Abra o arquivo index.html e copie o código completo do <header> e do <footer>.
+Abra o arquivo about.html e cole o código do <header> e do <footer> copiado.
+No about.html, insira uma seção <main> vazia entre o <header> e o <footer>.
+Salve as alterações e abra about.html no navegador para verificar se o cabeçalho e o rodapé estão aparecendo corretamente.
+Código: */
+
+about.html:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
+    <header class="cabecalho">
+        //... código do cabeçalho copiado
+    </header>
+    <main></main>
+    <footer class="rodape">
+        //... código do rodapé copiado
+    </footer>
+</body>
+</html>
+
+
+
+
+
+/* 6) Importando e corrigindo o caminho do arquivo CSS na página "Sobre mim"
+No arquivo about.html, adicione a tag <link> no <head> para importar o arquivo styles.css.
+Atualize o atributo href da tag <link> para o caminho correto, considerando a pasta "styles" onde o arquivo CSS foi movido. O caminho correto será "./styles/styles.css".
+Salve as alterações e abra about.html no navegador para verificar se os estilos foram aplicados, e se os links do cabeçalho e o texto do rodapé estão com a estilização correta.
+Código: */
+
+about.html:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    //... outros elementos do head
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    //... restante do código do body
+</body>
+</html>

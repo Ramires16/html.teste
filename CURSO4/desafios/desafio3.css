@@ -1,0 +1,77 @@
+/* 1) Personalizando o rodapé do seu site
+Abra o arquivo style.css e localize a classe .rodape.
+Atualize a propriedade background-color para #22D4FD.
+Defina a propriedade color para #000000.
+Centralize o texto adicionando text-align: center.
+Aplique a fonte 'Montserrat', com tamanho 24px e peso 400 usando font-family: 'Montserrat', sans-serif; e font-size: 24px; e font-weight: 400.
+Adicione padding: 24px para criar um espaçamento interno. */
+.rodape {
+    padding: 24px;
+    color: #000000;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+
+/* 2) Ajustando o espaçamento interno da apresentação
+Abra o arquivo style.css e localize a classe .apresentacao.
+Substitua a propriedade margin por padding.
+Inicialmente, defina padding: 5% 15%.
+Ajuste o valor do padding para encontrar o equilíbrio visual ideal, por exemplo, 8%. */
+.apresentacao {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* 3) Removendo o height para adaptar o layout
+Abra o arquivo style.css e localize a seção do body.
+Comente a linha que contém height: 100vh usando height: 100vh;.
+Salve o arquivo e observe como o layout do site se adapta, especialmente a área do rodapé. */
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+
+
+
+/* 4) Estilizando o cabeçalho com CSS
+Adicione as seguintes propriedades CSS à classe cabecalho__menu__link para estilizar os links: */
+  .cabecalho__menu__link {
+      font-size: 18px;
+      color: #333;
+      margin: 0 10px;
+      padding: 5px 10px;
+      text-decoration: none;
+  }
+
+  .cabecalho__menu__link:hover {
+      color: #007bff;
+  }
+
+  
+
+/* Ajuste as propriedades display, justify-content e align-items na classe cabecalho__menu para alinhar os links horizontalmente: */
+  .cabecalho__menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  
+/* 5) Ajustando o espaçamento interno dos links
+Para melhorar o espaçamento interno dos links no cabeçalho, ajuste a propriedade padding na classe cabecalho__menu__link. 
+Isso aumentará o espaço ao redor do texto dentro dos links, tornando-os mais legíveis e esteticamente agradáveis. Aqui está o código: */
+  .cabecalho__menu__link {
+      padding: 10px 15px;
+  }

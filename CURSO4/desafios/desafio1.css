@@ -1,0 +1,72 @@
+/* 1) Adicionando um subtítulo à página
+Abra o arquivo index.html.
+Localize a <div class="apresentacao__links">.
+Acima da linha do primeiro link, adicione a tag <h2> com o texto "Acesse minhas redes:". Seu código deve ficar assim: */
+<div class="apresentacao__links">
+    <h2>Acesse minhas redes:</h2>
+    <a class="apresentacao__links__link" href="https://instagram.com/rafaballerini">Instagram</a>
+    <a class="apresentacao__links__link" href="https://github.com/guilhermeonrails">Github</a>
+</div>
+
+
+
+/* 2) Alterando a disposição dos elementos com Flexbox
+Abra o arquivo style.css.
+Encontre a classe .apresentacao__links.
+Adicione a propriedade flex-direction: column; para mudar a disposição dos elementos para vertical. O código ficará: */
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+/* 3) Ajustando o alinhamento e o espaçamento dos elementos
+Continuando no arquivo style.css, dentro da classe .apresentacao__links:
+Adicione align-items: center; para centralizar os elementos verticalmente.
+Insira gap: 32px; para criar um espaçamento de 32px entre cada elemento. O código final será: */
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+
+
+
+/* 4) Criando uma classe para o subtítulo
+Abra o arquivo index.html.
+Localize a tag <h2> que contém o texto "Acesse minhas redes:".
+Adicione a classe apresentacao__links__subtitulo à tag <h2>. O trecho de código deve ficar assim: */
+<h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+
+
+
+
+/* 5) Estilizando o subtítulo
+Abra o arquivo style.css.
+Adicione a classe .apresentacao__links__subtitulo no início do arquivo.
+Configure as propriedades da classe da seguinte forma: */
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+
+
+/* 6) Modificando o estilo dos botões
+Ainda no arquivo style.css, encontre a classe .apresentacao__links__link.
+Faça as seguintes modificações na classe: */
+.apresentacao__links__link {
+    /* background-color: #22D4FD; */ /* Código comentado */
+    border: 2px solid #22D4FD;
+    color: #F6F6F6;
+    width: 378px;
+    border-radius: 8px;
+    /* Outras propriedades existentes permanecem inalteradas */
+}
